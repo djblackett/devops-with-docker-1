@@ -1,0 +1,21 @@
+dave@dave-VivoBook-ASUSLaptop-K3502ZA-K3502ZA:~$ docker exec -it stuff bash
+
+root@101543f81615:/# apt-get update
+root@101543f81615:/# apt-get install -y curl
+
+dave@dave-VivoBook-ASUSLaptop-K3502ZA-K3502ZA:~$ docker run -it --name stuff ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.20.1</center>
+</body>
+</html>
+Input website:
+
+
+

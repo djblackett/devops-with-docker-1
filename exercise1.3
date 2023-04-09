@@ -1,0 +1,9 @@
+dave@dave-VivoBook-ASUSLaptop-K3502ZA-K3502ZA:~$ docker run -d -it --name secret devopsdockeruh/simple-web-service:ubuntu
+dave@dave-VivoBook-ASUSLaptop-K3502ZA-K3502ZA:~$ docker attach secret
+dave@dave-VivoBook-ASUSLaptop-K3502ZA-K3502ZA:~$ docker exec -it secret bash
+root@ebf5536da413:/usr/src/app# ls
+server  text.log
+root@ebf5536da413:/usr/src/app# tail -f text.log
+
+
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
