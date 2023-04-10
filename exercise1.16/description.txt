@@ -1,0 +1,3 @@
+This is the dockerfile I used to make the deployed container. It is the example backend from this section's lessons. I already had a fly.io account from doing the FullStackOpen course, so it was pretty simple to get this deployed. I just ran flyctl launch and followed the prompts until it asked to deploy. Then it was deployed!
+
+https://muddy-thunder-129.fly.dev/
